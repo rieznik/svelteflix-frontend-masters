@@ -24,3 +24,9 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+.column {
+	width: var(--column);
+	margin: 0 auto;
+	padding: 0 var(--side);
+}

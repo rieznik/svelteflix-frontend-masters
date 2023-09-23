@@ -4,7 +4,7 @@
 	import tmdb from '$lib/images/tmdb.svg';
 </script>
 
-<nav>
+<nav class="column">
 	<a href="/"><img alt="SvelteFlix" src={logo} /></a>
 
 	<div class="links">
@@ -32,7 +32,6 @@
 		max-width: var(--column);
 		padding: 0 var(--side);
 		color: var(--accent);
-		margin: 0 auto;
 	}
 
 	a {
