@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Hero from './Hero.svelte';
+	import { views } from '$lib/views';
 
 	export let data;
 
@@ -11,4 +12,6 @@
 
 <Hero movie={data.featured} />
 
-<Carousel movies={data.trending.results} />
+<Carousel movies={data.trending.results} view={views.trending} href="/movies/trending" />
+<Carousel movies={data.nowPlaying.results} view={views.nowPlaying} href="/movies/now-playing" />
+<Carousel movies={data.upcoming.results} view={views.upcoming} href="/movies/upcoming" />
