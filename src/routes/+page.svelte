@@ -4,8 +4,6 @@
 	import { views } from '$lib/views';
 
 	export let data;
-
-	console.log(data);
 </script>
 
 <h1 class="column">Top trending movies</h1>
