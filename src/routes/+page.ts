@@ -9,7 +9,7 @@ export async function load({ fetch }) {
 	]);
 
 	const featured = (await api.get(fetch, `movie/${trending.results[0].id}`, {
-		append_to_response: 'images'
+		append_to_response: 'images,videos,recommendations'
 	})) as MovieDetails;
 
 	return {

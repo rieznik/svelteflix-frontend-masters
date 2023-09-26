@@ -56,7 +56,7 @@
 		style:padding-bottom="{paddingBottom}px"
 	>
 		{#each movies.slice(firstElement, lastElement) as movie}
-			<a href="/movie/{movie.id}">
+			<a href="/movies/{movie.id}">
 				<img src={media(movie.poster_path, 500)} alt={movie.title} />
 			</a>
 		{/each}
